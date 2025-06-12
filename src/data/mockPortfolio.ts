@@ -17,13 +17,13 @@ export const mockPortfolio: Portfolio = {
       videos: [
         {
           id: '1',
-          url: 'https://youtube.com/watch?v=techstart',
+          url: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
           title: 'TechStart Brand Video',
           thumbnail: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&auto=format&fit=crop&q=60'
         },
         {
           id: '2',
-          url: 'https://youtube.com/watch?v=travelvlog',
+          url: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4',
           title: 'Southeast Asia Travel Series',
           thumbnail: 'https://images.unsplash.com/photo-1528181304800-259b08848526?w=800&auto=format&fit=crop&q=60'
         }
@@ -39,7 +39,7 @@ export const mockPortfolio: Portfolio = {
       videos: [
         {
           id: '3',
-          url: 'https://youtube.com/watch?v=ecowear',
+          url: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4',
           title: 'EcoWear Product Launch',
           thumbnail: 'https://images.unsplash.com/photo-1445205170230-053b83016050?w=800&auto=format&fit=crop&q=60'
         }
@@ -55,7 +55,7 @@ export const mockPortfolio: Portfolio = {
       videos: [
         {
           id: '4',
-          url: 'https://youtube.com/watch?v=socialmedia',
+          url: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4',
           title: 'Social Media Campaign',
           thumbnail: 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=800&auto=format&fit=crop&q=60'
         }
