@@ -1,11 +1,23 @@
-## Architecture Overview
+## Assignment Deliverables
 
-This project uses the Next.js App Router with TypeScript for type safety and modularity. The main building blocks are:
+### 1. Full Source Code
 
-- **Pages**: Located in `src/app/`, including the landing page and dynamic user profile pages.
-- **API Routes**: Located in `src/app/api/`, for handling portfolio submission and saving.
-- **Components**: Modular, reusable UI components in `src/components/` (e.g., `EmployerCard`, `VideoCard`, `Notification`).
-- **Types**: All data models are defined in `src/types/portfolio.ts`.
-- **Mock Data**: Used for demonstration, found in `src/data/mockPortfolio.ts`.
+- All code is included in this repository, organized by feature and best practices.
 
-The UI is styled with Tailwind CSS and uses the Geist font for a modern look. Form validation is handled with `react-hook-form` and `zod`. 
+### 2. API Request Documentation
+
+- See [`API_DOCS.md`](./API_DOCS.md) for a 1-page summary of all API endpoints, request/response formats, and integration notes for backend engineers.
+
+### 3. Demo Walkthrough
+
+- See [`DEMO_WALKTHROUGH.md`](./DEMO_WALKTHROUGH.md) for a markdown walkthrough covering:
+  - User flow
+  - Component structure
+  - State management
+  - Scalability and edge case handling
+  - How AI was used (with key prompts, manual improvements, and creative uses)
+
+### 4. Use of AI
+
+- Documented in [`DEMO_WALKTHROUGH.md`](./DEMO_WALKTHROUGH.md).
+- Used AI tools (Copilot, ChatGPT) for code suggestions, brainstorming, and efficiency.
