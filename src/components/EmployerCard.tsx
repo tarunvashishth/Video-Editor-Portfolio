@@ -153,9 +153,6 @@ const EmployerCard: React.FC<EmployerCardProps> = ({
       {/* Project Videos */}
       <div className="max-w-5xl mx-auto bg-white rounded-2xl shadow p-8">
         <h3 className="text-xl font-bold mb-2 text-gray-900">Project Videos</h3>
-        <p className="text-gray-500 mb-6">
-          Showcase your best work for this client
-        </p>
         {isEditing && (
           <button
             onClick={onAddVideo}

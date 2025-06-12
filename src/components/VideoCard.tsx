@@ -1,6 +1,19 @@
 import { Video } from "@/types/portfolio";
 import Image from "next/image";
 
+// Helper to check if a string is a valid URL or a non-empty relative path
+function isValidImageUrl(url?: string): boolean {
+  if (!url || typeof url !== "string") return false;
+  // Accept relative paths (e.g., /placeholder.jpg)
+  if (url.startsWith("/")) return true;
+  try {
+    new URL(url);
+    return true;
+  } catch {
+    return false;
+  }
+}
+
 interface VideoCardProps {
   video: Video;
   isEditing: boolean;
@@ -70,6 +83,10 @@ export default function VideoCard({
   }
 
   // Display mode: only title and clickable thumbnail
+  const imageSrc = isValidImageUrl(video.thumbnail)
+    ? video.thumbnail!
+    : "/placeholder.jpg";
+
   return (
     <div className="group relative rounded-lg overflow-hidden shadow hover:shadow-lg transition bg-gray-50">
       <a
@@ -79,7 +96,7 @@ export default function VideoCard({
         className="block"
       >
         <Image
-          src={video.thumbnail || "/placeholder.jpg"}
+          src={imageSrc}
           alt={video.title}
           width={400}
           height={160}

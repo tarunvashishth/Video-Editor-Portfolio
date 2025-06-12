@@ -87,6 +87,21 @@ export default function ProfilePage() {
   };
 
   const handleAddEmployer = () => {
+    // Prevent adding if the last employer has empty required fields
+    const lastEmployer = portfolio.employers[portfolio.employers.length - 1];
+    if (lastEmployer && isEditing) {
+      if (
+        !lastEmployer.name.trim() ||
+        !lastEmployer.jobTitle.trim() ||
+        !lastEmployer.duration.trim() ||
+        !lastEmployer.contribution.trim()
+      ) {
+        setError(
+          "Please fill out all required fields in the previous experience before adding a new one."
+        );
+        return;
+      }
+    }
     const newEmployer: Employer = {
       id: Date.now().toString(),
       name: "",
@@ -121,6 +136,28 @@ export default function ProfilePage() {
     if (!portfolio.summary.trim()) {
       setError("Summary is required");
       return false;
+    }
+    // Validate all employer and video fields
+    for (const emp of portfolio.employers) {
+      if (
+        !emp.name.trim() ||
+        !emp.jobTitle.trim() ||
+        !emp.duration.trim() ||
+        !emp.contribution.trim()
+      ) {
+        setError(
+          "Please fill out all required fields for every experience before saving."
+        );
+        return false;
+      }
+      for (const vid of emp.videos) {
+        if (!vid.title.trim() || !vid.url.trim() || !vid.thumbnail.trim()) {
+          setError(
+            "Please fill out all required fields for every video before saving."
+          );
+          return false;
+        }
+      }
     }
     return true;
   };
