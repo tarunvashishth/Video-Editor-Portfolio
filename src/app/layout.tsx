@@ -14,7 +14,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Video Editor Portfolio",
-  description: "Showcase your creative video work with a structured, editable portfolio.",
+  description:
+    "Showcase your creative video work with a structured, editable portfolio.",
 };
 
 export default function RootLayout({

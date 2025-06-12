@@ -2,6 +2,7 @@ import { NextResponse } from 'next/server';
 import { Portfolio } from '@/types/portfolio';
 import { mockPortfolio } from '@/data/mockPortfolio';
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 async function extractPortfolioData(url: string): Promise<Portfolio> {
   // Simulate API delay
   await new Promise(resolve => setTimeout(resolve, 1500));
@@ -13,6 +14,7 @@ async function extractPortfolioData(url: string): Promise<Portfolio> {
   return mockPortfolio;
 }
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 function generateUsername(url: string): string {
   // In a real application, this would:
   // 1. Check if username is available
@@ -56,4 +58,4 @@ export async function POST(request: Request) {
       { status: 500 }
     );
   }
-} 
+}
