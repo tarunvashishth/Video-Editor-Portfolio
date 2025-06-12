@@ -8,4 +8,4 @@ This project uses the Next.js App Router with TypeScript for type safety and mod
 - **Types**: All data models are defined in `src/types/portfolio.ts`.
 - **Mock Data**: Used for demonstration, found in `src/data/mockPortfolio.ts`.
 
-The UI is styled with Tailwind CSS and uses the Geist font for a modern look. Form validation is handled with `react-hook-form` and `zod`. The codebase is structured for easy extension to real data sources and AI-powered features.
+The UI is styled with Tailwind CSS and uses the Geist font for a modern look. Form validation is handled with `react-hook-form` and `zod`. 
