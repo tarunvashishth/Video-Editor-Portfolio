@@ -1,29 +1,5 @@
 # Video Editor Portfolio: Demo Walkthrough & Engineering Notes
 
-## Key AI Prompts & Tools Used
-
-- "Suggest a modular React component structure for a portfolio editor."
-- "How can I handle form validation and error states in a Next.js?"
-- "Show me best practices for accessible, editable forms with Tailwind CSS."
-- "Draft a 1-page API documentation for backend."
-- "Brainstorm empty state and error UI for a creative portfolio app."
-- Used **GitHub Copilot** for code completion, boilerplate, and refactoring suggestions.
-- Used **ChatGPT** for brainstorming UI/UX, documentation, and code review.
-
-## Manual Modifications & Improvements
-
-- Refactored and modularized AI-generated code for clarity, maintainability, and assignment fit.
-- Improved accessibility (ARIA labels, keyboard navigation, color contrast) beyond AI suggestions.
-- Enhanced error handling, empty states, and edge case management.
-- Wrote and organized documentation, comments, and API docs to ensure clarity and alignment with assignment requirements.
-
-## Creative Use of AI
-
-- Used AI to quickly scaffold repetitive UI elements and forms, saving significant development time.
-- Prompted AI for alternative UI layouts and empty state designs to improve user experience.
-- Leveraged AI to review and optimize code for performance and scalability (e.g., component memoization, prop drilling reduction).
-- Used AI to draft initial API documentation, then manually tailored it for clarity and completeness.
-
 ## User Flow
 
 1. **Landing Page:**
@@ -75,12 +51,29 @@ The UI is styled with Tailwind CSS and uses the Geist font for a modern look. Fo
 
 ## AI Usage
 
-- Used GitHub Copilot and ChatGPT for code suggestions, refactoring, and brainstorming UI/UX improvements.
-- Manually improved:
-  - Accessibility (ARIA, keyboard, color contrast)
-  - Error handling and edge cases
-  - Modularization and code comments
-- Creative use: Prompted AI for best practices, empty state design, and API documentation structure.
+### Key AI Prompts & Tools Used
+
+- "Suggest a modular React component structure for a portfolio editor."
+- "How can I handle form validation and error states in a Next.js?"
+- "Show me best practices for accessible, editable forms with Tailwind CSS."
+- "Draft a 1-page API documentation for backend."
+- "Brainstorm empty state and error UI for a creative portfolio app."
+- Used **GitHub Copilot** for code completion, boilerplate, and refactoring suggestions.
+- Used **ChatGPT** for brainstorming UI/UX, documentation, and code review.
+
+### Manual Modifications & Improvements
+
+- Refactored and modularized AI-generated code for clarity, maintainability, and assignment fit.
+- Improved accessibility (ARIA labels, keyboard navigation, color contrast) beyond AI suggestions.
+- Enhanced error handling, empty states, and edge case management.
+- Wrote and organized documentation, comments, and API docs to ensure clarity and alignment with assignment requirements.
+
+### Creative Use of AI
+
+- Used AI to quickly scaffold repetitive UI elements and forms, saving significant development time.
+- Prompted AI for alternative UI layouts and empty state designs to improve user experience.
+- Leveraged AI to review and optimize code for performance and scalability (e.g., component memoization, prop drilling reduction).
+- Used AI to draft initial API documentation, then manually tailored it for clarity and completeness.
 
 ## Bonus: How to Scale for 10,000+ Portfolios
 
